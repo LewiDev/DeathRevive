@@ -1,0 +1,18 @@
+revive:
+  health: 10
+  soundEffect: Sound.BLOCK_GLASS_BREAK
+  item:
+    material: "GOLDEN_APPLE"
+    name: "&b&lREVIVE ITEM"
+    lore:
+      - " "
+      - "&aRight click a dead player to revive them"
+      - " "
+
+
+dead:
+  health: 10
+  soundeffect: Sound.BLOCK_ANVIL_LAND
+  setblind: true
+  time: 60
+  ## ^ time in seconds

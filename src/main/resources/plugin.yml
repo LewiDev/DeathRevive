@@ -1,0 +1,26 @@
+name: DeathRevive
+version: '${project.version}'
+main: me.lewi.deathtimer.Death
+api-version: 1.19
+authors: [ LewiDev ]
+
+commands:
+  death:
+    description: basic command for the DeathTimer plugin
+
+
+permissions:
+  DeathTimer.*:
+    description: access all permissions for this plugin
+    default: op
+    children:
+      DeathTimer.Reload: true
+      DeathTimer.Give: true
+      DeathTimer.NoTimer: true
+
+  DeathTimer.Reload:
+    description: reload the plugin config
+  DeathTimer.Give:
+    description: give a player a revive item
+  DeathTimer.NoTimer:
+    description: skip the death state
